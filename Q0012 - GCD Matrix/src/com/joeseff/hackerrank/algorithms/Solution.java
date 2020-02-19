@@ -48,8 +48,9 @@ public class Solution {
         StringBuilder sb = new StringBuilder();
 
         // Each loop represents a sub-matrix
+        Set<Long> uniqueNumSet = null;
         for (int qItr = 0; qItr < q; qItr++) {
-        	Set<Long> uniqueNumSet = new HashSet<>();
+        	uniqueNumSet = new HashSet<>();
             String[] r1C1R2C2 = scanner.nextLine().split(" ");
 
             // Get start and finish
